@@ -1,14 +1,29 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Weather App</title>
-  </head>
-  <body>
-    <form action="/" method="post">
-      <label for="cityInput"> City Name: </label>
-      <input id="cityInput" type="text" name="cityName" >
-      <button type="submit" >GO</button>
-    </form>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <title>Weather App</title>
+</head>
+
+<body>
+
+  <form action="/" method="post">
+    <div class="container searchContainer">
+      <div class="search card card-body">
+        <h1>Get The Weather For a Location</h1>
+        <label class = "lead" for="cityInput">Enter a City Name </label>
+        <input name="cityName" type="text" id="cityInput" class="form-control" placeholder="Location">
+      </div>
+      <br>
+    </div>
+    <div class="container text-center mt-2">
+      <button class="btn btn-primary" type="submit">Submit</button>
+    </div>
+  </form>
+
+</body>
+
 </html>
